@@ -78,10 +78,10 @@
 					    </div>
 					  </div>
 
-					  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					  <a class="left carousel-control" role="button" data-slide="prev" onclick="var elem = document.querySelector('.item.active img'), currSlide = Number(elem.src.slice(-5, -4));  elem.src = elem.src.slice(0,-5) + ((currSlide-1)%4) + '.svg'">
 						<span class="sr-only ">Previous</span>
 					  </a>
-					  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					  <a class="right carousel-control" role="button" data-slide="next" onclick="var elem = document.querySelector('.item.active img'), currSlide = Number(elem.src.slice(-5, -4));  elem.src = elem.src.slice(0,-5) + ((currSlide+1)%4) + '.svg'">
 						<span class="sr-only">Next</span>
 					  </a>
 
